@@ -1,0 +1,264 @@
+Local Custodian Code,Authority name,USRN Start,USRN End,Authority Type
+3615,Guildford,16000000,16099999,District
+6810,Gwynedd,46400000,46499999,Unitary
+5360,Hackney,20900000,20999999,Unitary
+650,Halton,16100000,16199999,Unitary
+2710,Hambleton,16200000,16299999,District
+5390,Hammersmith and Fulham,21000000,21099999,Unitary
+1770,Hampshire,81600000,81699999,County
+2415,Harborough,16400000,16499999,District
+5420,Haringey,21100000,21199999,Unitary
+1540,Harlow,16500000,16599999,District
+2715,Harrogate,16600000,16699999,District
+5450,Harrow,21200000,21299999,Unitary
+1730,Hart,16700000,16799999,District
+724,Hartlepool,16800000,16899999,Unitary
+1415,Hastings,16900000,16999999,District
+1735,Havant,17000000,17099999,District
+5480,Havering,21300000,21399999,Unitary
+1850,Herefordshire,23200000,23299999,Unitary
+1900,Hertfordshire,81800000,81899999,County
+1920,Hertsmere,17200000,17299999,District
+1030,High Peak,17300000,17399999,District
+5510,Hillingdon,21400000,21499999,Unitary
+2420,Hinckley and Bosworth,17400000,17499999,District
+3825,Horsham,17600000,17699999,District
+5540,Hounslow,21500000,21599999,Unitary
+520,Huntingdonshire,17800000,17899999,District
+2330,Hyndburn,17900000,17999999,District
+3515,Ipswich,18200000,18299999,District
+6805,Isle of Anglesey,18300000,18399999,Unitary
+2114,Isle of Wight,82000000,82099999,Unitary
+835,Isles of Scilly,46200000,46299999,Unitary
+5570,Islington,21600000,21699999,Unitary
+3905,Kennet,18500000,18599999,Former District
+5600,Kensington and Chelsea,21700000,21799999,Unitary
+2275,Kent,82100000,82199999,County
+815,Kerrier,18600000,18699999,Former District
+2820,Kettering,18700000,18799999,District
+2635,Kings Lynn and West Norfolk,19000000,19099999,District
+5630,Kingston upon Thames,21800000,21899999,Unitary
+4715,Kirklees,19400000,19499999,Unitary
+4305,Knowsley,19500000,19599999,Unitary
+5660,Lambeth,21900000,21999999,Unitary
+2371,Lancashire,82200000,82299999,County
+2335,Lancaster City,19700000,19799999,District
+4720,Leeds,23000000,23099999,Unitary
+2460,Leicestershire,82300000,82399999,County
+1425,Lewes,23300000,23399999,District
+5690,Lewisham,22000000,22099999,Unitary
+3415,Lichfield,23400000,23499999,District
+2515,Lincoln,23500000,23599999,District
+2500,Lincolnshire,82400000,82499999,County
+4310,Liverpool,23600000,23699999,Unitary
+230,Luton,24000000,24099999,Unitary
+630,Macclesfield,24100000,24199999,Former District
+2235,Maidstone,24200000,24299999,District
+1545,Maldon,24300000,24399999,District
+1820,Malvern Hills,24400000,24499999,District
+4215,Manchester,24500000,24599999,Unitary
+3025,Mansfield,24600000,24699999,District
+2280,Medway,32100000,32199999,Unitary
+2430,Melton,24900000,24999999,District
+3305,Mendip,25000000,25099999,District
+6925,Merthyr Tydfil,25100000,25199999,Unitary
+5720,Merton,22100000,22199999,Unitary
+215,Mid Bedfordshire,25200000,25299999,Former District
+1135,Mid Devon,25300000,25399999,District
+3520,Mid Suffolk,25500000,25599999,District
+3830,Mid Sussex,25600000,25699999,District
+734,Middlesbrough,25700000,25799999,Unitary
+435,Milton Keynes,25800000,25899999,Unitary
+3620,Mole Valley,25900000,25999999,District
+6840,Monmouthshire,47300000,47399999,Unitary
+6930,Neath Port Talbot,47700000,47799999,Unitary
+1740,New Forest,26700000,26799999,District
+3030,Newark and Sherwood,26800000,26899999,District
+4510,Newcastle City,8200000,8299999,Unitary
+3420,Newcastle-under-Lyme,27000000,27099999,District
+5750,Newham,22200000,22299999,Unitary
+6935,Newport,27100000,27199999,Unitary
+2600,Norfolk,82500000,82599999,County
+820,North Cornwall,27400000,27499999,Former District
+1115,North Devon,27500000,27599999,District
+1215,North Dorset,27600000,27699999,District
+1035,North East Derbyshire,27700000,27799999,District
+2002,North East Lincolnshire,46000000,46099999,Unitary
+1925,North Hertfordshire,27900000,27999999,District
+2520,North Kesteven,28000000,28099999,District
+2003,North Lincolnshire,46100000,46199999,Unitary
+2620,North Norfolk,28100000,28199999,District
+3210,North Shropshire,28200000,28299999,Former District
+121,North Somerset,47800000,47899999,Unitary
+4515,North Tyneside,28300000,28399999,Unitary
+3705,North Warwickshire,28400000,28499999,District
+2435,North West Leicestershire,28500000,28599999,District
+3910,North Wiltshire,28600000,28699999,Former District
+2745,North Yorkshire,82600000,82699999,County
+2825,Northampton,28700000,28799999,District
+2800,Northamptonshire,82700000,82799999,County
+2900,Northumberland,82800000,82899999,Former County
+2935,Northumberland,28800000,28899999,Unitary
+2625,Norwich,28900000,28999999,District
+3060,Nottingham City,29000000,29099999,Unitary
+3055,Nottinghamshire,82900000,82999999,County
+3710,Nuneaton and Bedworth,29100000,29199999,District
+2440,Oadby and Wigston,29200000,29299999,District
+4220,Oldham,29400000,29499999,Unitary
+3215,Oswestry,29600000,29699999,Former District
+3110,Oxford,29700000,29799999,District
+3100,Oxfordshire,83000000,83099999,County
+6845,Pembrokeshire,47000000,47099999,Unitary
+2340,Pendle,29800000,29899999,District
+825,Penwith,29900000,29999999,Former District
+1255,Poole,30300000,30399999,Unitary
+6850,Powys,85300000,85399999,Unitary
+6854,Powys 2,85300000,85399999,Unitary
+2345,Preston,30700000,30799999,District
+1225,Purbeck,30800000,30899999,District
+345,Reading,31000000,31099999,Unitary
+5780,Redbridge,22300000,22399999,Unitary
+728,Redcar and Cleveland,46300000,46399999,Unitary
+1825,Redditch,31100000,31199999,District
+3625,Reigate and Banstead,31200000,31299999,District
+830,Restormel,31400000,31499999,Former District
+6940,Rhondda Cynon Taf,47400000,47499999,Unitary
+2350,Ribble Valley,31800000,31899999,District
+5810,Richmond upon Thames,22400000,22499999,Unitary
+2720,Richmondshire,31900000,31999999,District
+4225,Rochdale,32000000,32099999,Unitary
+1550,Rochford,32200000,32299999,District
+2355,Rossendale,32400000,32499999,District
+1430,Rother,32500000,32599999,District
+4415,Rotherham,32600000,32699999,Unitary
+3715,Rugby,32800000,32899999,District
+3630,Runnymede,32900000,32999999,District
+3040,Rushcliffe,33000000,33099999,District
+1750,Rushmoor,33100000,33199999,District
+2470,Rutland,33200000,33299999,Unitary
+2725,Ryedale,33300000,33399999,District
+4230,Salford,33400000,33499999,Unitary
+3915,Salisbury,33500000,33599999,Former District
+4620,Sandwell,33600000,33699999,Unitary
+2730,Scarborough,33700000,33799999,District
+1330,Sedgefield,33900000,33999999,Former District
+3310,Sedgemoor,34000000,34099999,District
+4320,Sefton,34100000,34199999,Unitary
+2735,Selby,34200000,34299999,District
+2245,Sevenoaks,34300000,34399999,District
+4420,Sheffield,34400000,34499999,Unitary
+2250,Shepway,34500000,34599999,District
+3220,Shrewsbury and Atcham,34700000,34799999,Former District
+3235,Shropshire,83100000,83199999,Former County
+3245,Shropshire,34800000,34899999,Unitary
+350,Slough,34900000,34999999,Unitary
+4625,Solihull,35000000,35099999,Unitary
+3300,Somerset,83200000,83299999,County
+220,South Bedfordshire,35100000,35199999,Former District
+410,South Bucks,35200000,35299999,District
+530,South Cambridgeshire,35300000,35399999,District
+1040,South Derbyshire,35400000,35499999,District
+119,South Gloucestershire,48000000,48099999,Unitary
+1125,South Hams,35500000,35599999,District
+2525,South Holland,35700000,35799999,District
+2530,South Kesteven,35800000,35899999,District
+930,South Lakeland,35900000,35999999,District
+2630,South Norfolk,36000000,36099999,District
+2830,South Northamptonshire,36100000,36199999,District
+3115,South Oxfordshire,36200000,36299999,District
+2360,South Ribble,36400000,36499999,District
+3225,South Shropshire,36500000,36599999,Former District
+3325,South Somerset,36600000,36699999,District
+3430,South Staffordshire,36700000,36799999,District
+4520,South Tyneside,36800000,36899999,Unitary
+1590,Southend-on-Sea,37100000,37199999,Unitary
+5840,Southwark,22500000,22599999,Unitary
+3635,Spelthorne,37200000,37299999,District
+1930,St Albans,37300000,37399999,District
+3525,St Edmundsbury,37400000,37499999,District
+4315,St Helens,37500000,37599999,Unitary
+3425,Stafford,37600000,37699999,District
+3450,Staffordshire,83300000,83399999,County
+3435,Staffordshire Moorlands,37700000,37799999,District
+1935,Stevenage,37800000,37899999,District
+4235,Stockport,38100000,38199999,Unitary
+738,Stockton-on-Tees,38200000,38299999,Unitary
+3720,Stratford-on-Avon,38300000,38399999,District
+1625,Stroud,38500000,38599999,District
+3500,Suffolk,83400000,83499999,County
+3530,Suffolk Coastal,38600000,38699999,District
+4525,Sunderland,38700000,38799999,Unitary
+3600,Surrey,83500000,83599999,County
+3640,Surrey Heath,38800000,38899999,District
+5870,Sutton,22600000,22699999,Unitary
+2255,Swale,39000000,39099999,District
+6855,Swansea,39100000,39199999,Unitary
+3935,Swindon,40200000,40299999,Unitary
+4240,Tameside,39300000,39399999,Unitary
+3445,Tamworth,39400000,39499999,District
+3645,Tandridge,39500000,39599999,District
+3315,Taunton Deane,39600000,39699999,District
+1335,Teesdale,39700000,39799999,Former District
+1130,Teignbridge,39800000,39899999,District
+3240,Telford and Wrekin,45200000,45299999,Unitary
+1560,Tendring,39900000,39999999,District
+1760,Test Valley,40000000,40099999,District
+1630,Tewkesbury,40100000,40199999,District
+2260,Thanet District,40300000,40399999,District
+6950,The Vale of Glamorgan,41500000,41599999,Unitary
+1940,Three Rivers,40400000,40499999,District
+1595,Thurrock,40500000,40599999,Unitary
+2265,Tonbridge and Malling,40600000,40699999,District
+1165,Torbay,40700000,40799999,Unitary
+6945,Torfaen,40800000,40899999,Unitary
+1145,Torridge,40900000,40999999,District
+5900,Tower Hamlets,22700000,22799999,Unitary
+4245,Trafford,41000000,41099999,Unitary
+2270,Tunbridge Wells,41100000,41199999,District
+2925,Tynedale,41300000,41399999,Former District
+1570,Uttlesford,41400000,41499999,District
+3120,Vale of White Horse,41600000,41699999,District
+635,Vale Royal,41700000,41799999,Former District
+4725,Wakefield,41800000,41899999,Unitary
+4630,Walsall,41900000,41999999,Unitary
+5930,Waltham Forest,22800000,22899999,Unitary
+5960,Wandsworth,22900000,22999999,Unitary
+2930,Wansbeck,42000000,42099999,Former District
+655,Warrington,42200000,42299999,Unitary
+3725,Warwick,42300000,42399999,District
+3700,Warwickshire,83600000,83699999,County
+1945,Watford,42400000,42499999,District
+3535,Waveney,42500000,42599999,District
+3650,Waverley,42600000,42699999,District
+1435,Wealden,42700000,42799999,District
+1340,Wear Valley,42800000,42899999,Former District
+2835,Wellingborough,42900000,42999999,District
+1950,Welwyn Hatfield,43000000,43099999,District
+340,West Berkshire,26900000,26999999,Unitary
+1150,West Devon,43100000,43199999,District
+1230,West Dorset,43200000,43299999,District
+2365,West Lancashire,43300000,43399999,District
+2535,West Lindsey,43400000,43499999,District
+3125,West Oxfordshire,43600000,43699999,District
+3320,West Somerset,43700000,43799999,District
+3800,West Sussex,83700000,83799999,County
+3925,West Wiltshire,43800000,43899999,Former District
+1235,Weymouth and Portland,44000000,44099999,District
+4250,Wigan,44100000,44199999,Unitary
+3930,Wiltshire,83800000,83899999,Former County
+3940,Wiltshire,44200000,44299999,Unitary
+1765,Winchester,44300000,44399999,District
+355,Windsor and Maidenhead,44400000,44499999,Unitary
+4325,Wirral,44500000,44599999,Unitary
+3655,Woking,44600000,44699999,District
+360,Wokingham,44700000,44799999,Unitary
+4635,Wolverhampton,44800000,44899999,Unitary
+1835,Worcester,45000000,45099999,District
+1855,Worcestershire,81700000,81799999,County
+3835,Worthing,45100000,45199999,District
+6955,Wrexham,46900000,46999999,Unitary
+1840,Wychavon,45400000,45499999,District
+425,Wycombe,45500000,45599999,District
+2370,Wyre,45600000,45699999,District
+1845,Wyre Forest,45700000,45799999,District
+2741,York,45800000,45899999,Unitary
