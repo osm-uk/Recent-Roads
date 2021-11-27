@@ -1,4 +1,203 @@
 Local Custodian Code,Authority name,USRN Start,USRN End,Authority Type
+3805,Adur,00200000,00299999,District
+905,Allerdale,00300000,00399999,District
+2905,Alnwick,00400000,00499999,Former District
+1005,Amber Valley,00600000,00699999,District
+3810,Arun,01100000,01199999,District
+3005,Ashfield,01200000,01299999,District
+2205,Ashford,01300000,01399999,District
+405,Aylesbury Vale,01400000,01499999,District
+3505,Babergh,01500000,01599999,District
+4405,Barnsley,01800000,01899999,Unitary
+5060,Barking and Dagenham,19900000,19999999,Unitary
+5090,Barnet,20000000,20099999,Unitary
+910,Barrow-in-Furness,01900000,01999999,District
+1505,Basildon,02000000,02099999,District
+1705,Basingstoke and Deane,02100000,02199999,District
+3010,Bassetlaw,02200000,02299999,District
+114,Bath and North East Somerset,47900000,47999999,Unitary
+205,Bedford,27300000,27399999,Former District
+235,Bedford,27300000,27399999,Unitary
+5120,Bexley,20100000,20199999,Unitary
+225,Bedfordshire,80100000,80199999,Former County
+2910,Berwick-upon-Tweed,02500000,02599999,Former District
+4605,Birmingham,02700000,02799999,Unitary
+2405,Blaby,02800000,02899999,District
+2372,Blackburn,02900000,02999999,Unitary
+2373,Blackpool,03000000,03099999,Unitary
+6910,Blaenau Gwent,03100000,03199999,Unitary
+2915,Blyth Valley,03200000,03299999,Former District
+1010,Bolsover,03300000,03399999,District
+4205,Bolton,03400000,03499999,Unitary
+2505,Boston,03600000,03699999,District
+1250,Bournemouth,03700000,03799999,Unitary
+335,Bracknell Forest,03800000,03899999,Unitary
+4705,Bradford,07700000,07799999,Unitary
+1510,Braintree,03900000,03999999,District
+2605,Breckland,04000000,04099999,District
+5150,Brent,20200000,20299999,Unitary
+1515,Brentwood,04200000,04299999,District
+6915,Bridgend,47600000,47699999,Unitary
+3205,Bridgnorth,04300000,04399999,Former District
+1445,Brighton and Hove,04400000,04499999,Unitary
+116,Bristol City,04500000,04599999,Unitary
+2610,Broadland,04600000,04699999,District
+5180,Bromley,20300000,20399999,Unitary
+1805,Bromsgrove,04700000,04799999,District
+1905,Broxbourne,04800000,04899999,District
+3015,Broxtowe,04900000,04999999,District
+430,Buckinghamshire,80300000,80399999,County
+2315,Burnley,05000000,05099999,District
+4210,Bury,05100000,05199999,Unitary
+6920,Caerphilly,47500000,47599999,Unitary
+4710,Calderdale,05300000,05399999,Unitary
+505,Cambridge,05400000,05499999,District
+535,Cambridgeshire,80400000,80499999,County
+5210,Camden,20400000,20499999,Unitary
+3405,Cannock Chase,05500000,05599999,District
+2210,Canterbury,05600000,05699999,District
+805,Caradon,05700000,05799999,Former District
+6815,Cardiff,05800000,05899999,Unitary
+915,Carlisle,05900000,05999999,District
+6825,Carmarthenshire,47200000,47299999,Unitary
+810,Carrick,06100000,06199999,Former District
+2920,Castle Morpeth,06200000,06299999,Former District
+1520,Castle Point,06300000,06399999,District
+240,Central Bedfordshire,6000000,6099999,Unitary
+6820,Ceredigion,47100000,47199999,Unitary
+2410,Charnwood,06500000,06599999,District
+1525,Chelmsford,06600000,06699999,District
+1605,Cheltenham,06700000,06799999,District
+3105,Cherwell,06800000,06899999,District
+645,Cheshire,80500000,80599999,Former County
+665,Cheshire West and Chester,8600000,8699999,Unitary
+605,Chester,06900000,06999999,Former District
+1250,Bournemouth,03700000,03799999,Unitary
+335,Bracknell Forest,03800000,03899999,Unitary
+4705,Bradford,07700000,07799999,Unitary
+1510,Braintree,03900000,03999999,District
+2605,Breckland,04000000,04099999,District
+5150,Brent,20200000,20299999,Unitary
+1515,Brentwood,04200000,04299999,District
+6915,Bridgend,47600000,47699999,Unitary
+3205,Bridgnorth,04300000,04399999,Former District
+1445,Brighton and Hove,04400000,04499999,Unitary
+116,Bristol City,04500000,04599999,Unitary
+2610,Broadland,04600000,04699999,District
+5180,Bromley,20300000,20399999,Unitary
+1805,Bromsgrove,04700000,04799999,District
+1905,Broxbourne,04800000,04899999,District
+3015,Broxtowe,04900000,04999999,District
+430,Buckinghamshire,80300000,80399999,County
+2315,Burnley,05000000,05099999,District
+4210,Bury,05100000,05199999,Unitary
+6920,Caerphilly,47500000,47599999,Unitary
+4710,Calderdale,05300000,05399999,Unitary
+505,Cambridge,05400000,05499999,District
+535,Cambridgeshire,80400000,80499999,County
+5210,Camden,20400000,20499999,Unitary
+3405,Cannock Chase,05500000,05599999,District
+2210,Canterbury,05600000,05699999,District
+805,Caradon,05700000,05799999,Former District
+6815,Cardiff,05800000,05899999,Unitary
+915,Carlisle,05900000,05999999,District
+6825,Carmarthenshire,47200000,47299999,Unitary
+810,Carrick,06100000,06199999,Former District
+2920,Castle Morpeth,06200000,06299999,Former District
+1520,Castle Point,06300000,06399999,District
+240,Central Bedfordshire,6000000,6099999,Unitary
+6820,Ceredigion,47100000,47199999,Unitary
+2410,Charnwood,06500000,06599999,District
+1525,Chelmsford,06600000,06699999,District
+1605,Cheltenham,06700000,06799999,District
+3105,Cherwell,06800000,06899999,District
+645,Cheshire,80500000,80599999,Former County
+665,Cheshire West and Chester,8600000,8699999,Unitary
+605,Chester,06900000,06999999,Former District
+660,Cheshire East,6400000,6499999,Unitary
+1305,Chester le Street,07000000,07099999,Former District
+1015,Chesterfield,07100000,07199999,District
+3815,Chichester,07200000,07299999,District
+415,Chiltern,07300000,07399999,District
+2320,Chorley,07400000,07499999,District
+1210,Christchurch,07500000,07599999,District
+1055,City of Derby,10800000,10899999,Unitary
+2004,City of Kingston upon Hull,19100000,19199999,Unitary
+2465,City of Leicester,23100000,23199999,Unitary
+5030,City of London,08100000,08199999,Unitary
+540,City of Peterborough,30100000,30199999,Unitary
+1160,City of Plymouth,30200000,30299999,Unitary
+1775,City of Portsmouth,30500000,30599999,Unitary
+1780,City of Southampton,37000000,37099999,Unitary
+3455,City of Stoke-on-Trent,08300000,08399999,Unitary
+5990,City of Westminster,08400000,08499999,Unitary
+1530,Colchester,08900000,08999999,District
+610,Congleton,09100000,09199999,Former District
+6905,Conwy,46600000,46699999,Unitary
+920,Copeland,09200000,09299999,District
+2805,Corby,09300000,09399999,District
+800,Cornwall,80700000,80799999,Former County
+840,Cornwall,9000000,9099999,Unitary
+1610,Cotswold,09400000,09499999,District
+4610,Coventry,09500000,09599999,Unitary
+2705,Craven,09600000,09699999,District
+3820,Crawley,09700000,09799999,District
+615,Crewe and Nantwich,09800000,09899999,Former District
+5240,Croydon,20500000,20599999,Unitary
+900,Cumbria,80800000,80899999,County
+1910,Dacorum,10300000,10399999,District
+1350,Darlington,10400000,10499999,Unitary
+2215,Dartford,10500000,10599999,District
+2810,Daventry,10600000,10699999,District
+6830,Denbighshire,46700000,46799999,Unitary
+1050,Derbyshire,80900000,80999999,County
+1045,Derbyshire Dales,10900000,10999999,District
+1315,Derwentside,11000000,11099999,Former District
+1155,Devon,81000000,81099999,County
+4410,Doncaster,11200000,11299999,Unitary
+1245,Dorset,81100000,81199999,County
+2220,Dover,11300000,11399999,District
+4615,Dudley,11400000,11499999,Unitary
+1345,Durham,81200000,81299999,Former County
+1355,Durham,11600000,11699999,Unitary
+1320,Durham,11700000,11799999,Former District
+5270,Ealing,20600000,20699999,Unitary
+1325,Easington,11900000,11999999,Former District
+510,East Cambridgeshire,12000000,12099999,District
+1105,East Devon,12100000,12199999,District
+1240,East Dorset,12200000,12299999,District
+1710,East Hampshire,12300000,12399999,District
+1915,East Hertfordshire,12400000,12499999,District
+2510,East Lindsey,12600000,12699999,District
+2815,East Northamptonshire,12800000,12899999,District
+2001,East Riding of Yorkshire,45900000,45999999,Unitary
+3410,East Staffordshire,12900000,12999999,District
+1440,East Sussex,81300000,81399999,County
+1410,Eastbourne,13200000,13299999,District
+1715,Eastleigh,13300000,13399999,District
+925,Eden,13500000,13599999,District
+5300,Enfield,20700000,20799999,Unitary
+620,Ellesmere Port and Neston,13600000,13699999,Former District
+3605,Elmbridge,13700000,13799999,District
+1535,Epping Forest,13800000,13899999,District
+3610,Epsom and Ewell,13900000,13999999,District
+1025,Erewash,14000000,14099999,District
+1585,Essex,81400000,81499999,County
+1110,Exeter,14200000,14299999,District
+1720,Fareham,14400000,14499999,District
+515,Fenland,14500000,14599999,District
+6835,Flintshire,46800000,46899999,Unitary
+3510,Forest Heath,14600000,14699999,District
+1615,Forest of Dean,14700000,14799999,District
+2325,Fylde,14800000,14899999,District
+4505,Gateshead,14900000,14999999,Unitary
+3020,Gedling,15000000,15099999,District
+1620,Gloucester,15300000,15399999,District
+1600,Gloucestershire,81500000,81599999,County
+1725,Gosport,15600000,15699999,District
+2230,Gravesham,15700000,15799999,District
+2615,Great Yarmouth,15900000,15999999,District
+5330,Greenwich,20800000,20899999,Unitary
 3615,Guildford,16000000,16099999,District
 6810,Gwynedd,46400000,46499999,Unitary
 5360,Hackney,20900000,20999999,Unitary
