@@ -1,0 +1,22 @@
+body {
+	margin: 40px auto;
+	max-width: 1024px;
+	font-size: 18px;
+	padding: 0 10px;
+	color: #444444;
+	background: #EEEEEE;
+}
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+td, th {
+	padding: 8px;
+	border: 1px solid #CCCCCC;}
+
+p {
+	text-align: justify;
+	text-justify: auto;
+}
