@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+		<table>
+			<th>
+				<tr>USRN</tr>
+				<tr>Type</tr>
+			</th>
+			{% for usrn in usrns %}
+			<tr>
+				<td><a href="/usrn/{{ usrn[1] }}">{{ usrn[1] }}</a></td>
+				<td>{{ usrn[0] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+{% endblock %}

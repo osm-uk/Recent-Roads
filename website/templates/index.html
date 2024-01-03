@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+		<table>
+			<th>
+				<tr>USRN</tr>
+				<tr>Type</tr>
+			</th>
+			{% for authority in authorities %}
+			<tr>
+				<td><a href="/authority/{{ authority["Local Custodian Code"] }}">{{ authority["Authority name"] }}</a></td>
+				<td>{{ authority["Authority Type"] }}</td>
+			</tr>
+			{% endfor %}
+		</table>
+{% endblock %}
