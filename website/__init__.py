@@ -12,6 +12,13 @@ with open("USRN Ranges.csv") as file:
     for row in csv.DictReader(file):
         authority_map[row["Local Custodian Code"]] = row
 
+lang_map = {
+    None: "addr:street",
+    "cym": "addr:street:cy",
+    "gla": "addr:street:gd",
+    "eng": "addr:street:en",
+}
+
 
 @app.route("/")
 def home() -> str:
@@ -25,6 +32,17 @@ def usrn(usrn: str) -> str:
     except ValueError:
         return "Bad USRN"
     cur = conn.cursor()
+    cur.execute(
+        "SELECT DISTINCT name_1, name_1_lang, name_2, name_2_lang FROM toid2name WHERE road_name_toid IN (SELECT identifier_1 FROM usrn2toid WHERE identifier_2='%s')",
+        (usrn_cleaned,),
+    )
+    names = {}
+    for name_1, name_1_lang, name_2, name_2_lang in cur.fetchall():
+        if name_1:
+            names[lang_map[name_1_lang]] = name_1
+        if name_2:
+            names[lang_map[name_2_lang]] = name_2
+
     cur.execute(
         "SELECT street_type, CAST(usrn as varchar) as usrn, ST_AsGeoJSON(geometry) as geom FROM usrn WHERE usrn = %s LIMIT 1",
         (usrn_cleaned,),
@@ -44,7 +62,13 @@ def usrn(usrn: str) -> str:
         raise Exception(geom)
 
     return render_template(
-        "usrn.html", street_type=record[0], usrn=record[1], geom=geom, lat=lat, lon=lon
+        "usrn.html",
+        street_type=record[0],
+        usrn=record[1],
+        geom=geom,
+        lat=lat,
+        lon=lon,
+        name="".join("\\n{}={}".format(k, v) for k, v in names.items()),
     )
 
 

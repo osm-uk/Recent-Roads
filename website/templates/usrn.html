@@ -23,6 +23,6 @@
 				maxZoom: 19,
 				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}).addTo(map);
-			L.geoJSON({% autoescape false %}{{ geom }}{% endautoescape %}, {style: { "weight": 15 }}).addTo(map).bindPopup('<code>ref:GB:usrn={{ usrn }}</code>').openPopup();
+			L.geoJSON({% autoescape false %}{{ geom }}{% endautoescape %}, {style: { "weight": 15 }}).addTo(map).bindPopup('<pre><code>ref:GB:usrn={{ usrn }}{{ name }}</code></pre>').openPopup();
 		</script>
 {% endblock %}
