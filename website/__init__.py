@@ -26,7 +26,7 @@ def usrn(usrn: str) -> str:
         return "Bad USRN"
     cur = conn.cursor()
     cur.execute(
-        "SELECT street_type, CAST(usrn as varchar) as usrn, ST_AsGeoJSON(geometry) as geom FROM osopenusrn_202401 WHERE usrn = %s LIMIT 1",
+        "SELECT street_type, CAST(usrn as varchar) as usrn, ST_AsGeoJSON(geometry) as geom FROM usrn WHERE usrn = %s LIMIT 1",
         (usrn_cleaned,),
     )
     record = cur.fetchone()
@@ -56,7 +56,7 @@ def authority(authority: str) -> str:
 
     cur = conn.cursor()
     cur.execute(
-        "SELECT street_type, usrn FROM osopenusrn_202401 WHERE usrn > %s AND usrn < %s ORDER BY usrn DESC LIMIT 100 OFFSET 0",
+        "SELECT street_type, usrn FROM usrn WHERE usrn > %s AND usrn < %s ORDER BY usrn DESC LIMIT 100 OFFSET 0",
         (authority_range["USRN Start"], authority_range["USRN End"]),
     )
     records = cur.fetchall()
