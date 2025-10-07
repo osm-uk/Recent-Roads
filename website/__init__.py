@@ -48,24 +48,49 @@ def usrn(usrn: str) -> str:
         (usrn_cleaned,),
     )
     record = cur.fetchone()
-    cur.close()
 
     if not record:
         return ":( not found"
 
-    geom = json.loads(record[2])
-    if geom["type"] == "MultiLineString":
-        lon, lat = geom["coordinates"][0][0]
-    elif geom["type"] == "LineString":
-        lon, lat = geom["coordinates"][0]
+    usrn_geom = json.loads(record[2])
+    if usrn_geom["type"] == "MultiLineString":
+        lon, lat = usrn_geom["coordinates"][0][0]
+    elif usrn_geom["type"] == "LineString":
+        lon, lat = usrn_geom["coordinates"][0]
     else:
-        raise Exception(geom)
+        raise Exception(usrn_geom)
+
+    cur.execute(
+        """SELECT
+				json_build_object(
+					'type', 'FeatureCollection',
+					'features', json_agg(
+						ST_AsGeoJSON(t.*):: json
+					)
+				)
+			FROM
+				(
+					SELECT
+						uprn as "ref:GB:uprn",
+						wkb_geometry
+					FROM
+						uprn2usrn
+						JOIN uprn ON uprn.uprn = identifier_1
+					WHERE
+						identifier_2 = '%s'
+				) as t;""",
+        (usrn_cleaned,),
+    )
+    uprns = cur.fetchone()
+
+    cur.close()
 
     return render_template(
         "usrn.html",
         street_type=record[0],
         usrn=record[1],
-        geom=geom,
+        usrn_geom=usrn_geom,
+        uprn_geom=uprns[0],
         lat=lat,
         lon=lon,
         name="".join("\\n{}={}".format(k, v) for k, v in names.items()),
