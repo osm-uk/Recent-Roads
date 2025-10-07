@@ -13,10 +13,10 @@ with open("USRN Ranges.csv") as file:
         authority_map[row["Local Custodian Code"]] = row
 
 lang_map = {
-    None: "addr:street",
-    "cym": "addr:street:cy",
-    "gla": "addr:street:gd",
-    "eng": "addr:street:en",
+    None: "name",
+    "cym": "name:cy",
+    "gla": "name:gd",
+    "eng": "name:en",
 }
 
 
