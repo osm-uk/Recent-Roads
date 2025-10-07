@@ -34,15 +34,20 @@
 				minZoom: 18
 			}).addTo(map);
 
-			var usrn = L.geoJSON({% autoescape false %}{{ usrn_geom }}{% endautoescape %}, {style: { "weight": 15 }});
+			var usrn = L.geoJSON({% autoescape false %}{{ usrn_geom }}{% endautoescape %}, {
+				'style': { 'weight': 15 },
+				'attribution': 'Contains OS data © Crown copyright and database right 2025'
+			});
 			usrn.addTo(map).bindPopup('<pre><code>ref:GB:usrn={{ usrn }}{{ name }}</code></pre>').openPopup();
 
 			var overlays = {'OS Open USRN': usrn, 'HM Land Registry INSPIRE Index Polygons': propertyBoundaries}
 
 			var uprn_geom = {% autoescape false %}{{ uprn_geom }}{% endautoescape %};
 			if (uprn_geom !== null && uprn_geom.features !== undefined && uprn_geom.features.length > 1) {
-				var uprn = L.geoJSON({% autoescape false %}{{ uprn_geom }}{% endautoescape %});
-				uprn.bindPopup((layer) => { return '<pre><code>' + (() => {let tags = ''; for (const [k, v] of Object.entries(layer.feature.properties)) {tags += `${k}=${v}\n`;} return tags;})() + '</code></pre>' });
+				var uprn = L.geoJSON({% autoescape false %}{{ uprn_geom }}{% endautoescape %}, {
+					'attribution': 'Contains OS data © Crown copyright and database right 2025'
+				});
+				uprn.bindPopup((layer) => { return '<pre><code>' + (() => {let tags = ''; for (const [k, v] of Object.entries(layer.feature.properties)) {tags += `${k}=${v}\n`;} return tags;})() + '</code></pre>' }).addTo(map);
 				overlays['OS Open UPRN'] = uprn;
 			}
 
