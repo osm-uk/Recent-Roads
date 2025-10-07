@@ -60,28 +60,31 @@ def usrn(usrn: str) -> str:
     else:
         raise Exception(usrn_geom)
 
-    cur.execute(
-        """SELECT
-				json_build_object(
-					'type', 'FeatureCollection',
-					'features', json_agg(
-						ST_AsGeoJSON(t.*):: json
+    if "uprn" in request.args:
+        cur.execute(
+            """SELECT
+					json_build_object(
+						'type', 'FeatureCollection',
+						'features', json_agg(
+							ST_AsGeoJSON(t.*):: json
+						)
 					)
-				)
-			FROM
-				(
-					SELECT
-						uprn as "ref:GB:uprn",
-						wkb_geometry
-					FROM
-						uprn2usrn
-						JOIN uprn ON uprn.uprn = identifier_1
-					WHERE
-						identifier_2 = '%s'
-				) as t;""",
-        (usrn_cleaned,),
-    )
-    uprns = cur.fetchone()
+				FROM
+					(
+						SELECT
+							uprn as "ref:GB:uprn",
+							wkb_geometry
+						FROM
+							uprn2usrn
+							JOIN uprn ON uprn.uprn = identifier_1
+						WHERE
+							identifier_2 = '%s'
+					) as t;""",
+            (usrn_cleaned,),
+        )
+        uprns = cur.fetchone()
+    else:
+        uprns = ['null']
 
     cur.close()
 
