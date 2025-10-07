@@ -35,7 +35,7 @@
 			var usrn = L.geoJSON({% autoescape false %}{{ usrn_geom }}{% endautoescape %}, {style: { "weight": 15 }});
 			usrn.addTo(map).bindPopup('<pre><code>ref:GB:usrn={{ usrn }}{{ name }}</code></pre>').openPopup();
 			var uprn = L.geoJSON({% autoescape false %}{{ uprn_geom }}{% endautoescape %}, {style: { "weight": 15 }});
-			uprn.bindPopup(function (layer){ return '<pre><code>ref:GB:uprn=' + layer.feature.properties['ref:GB:uprn'] + '</code></pre>' });
+			uprn.bindPopup((layer) => { return '<pre><code>' + (() => {let tags = ''; for (const [k, v] of Object.entries(layer.feature.properties)) {tags += `${k}=${v}\n`;} return tags;})() + '</code></pre>' });
 			var layerControl = L.control.layers({'OpenStreetMap': osm, 'OS OpenMap Local - April 2025': gb_os_om_local_2025_04}, {'OS Open USRN': usrn, 'OS Open UPRN': uprn, 'HM Land Registry INSPIRE Index Polygons': propertyBoundaries}, {'collapsed': false}).addTo(map);
 		</script>
 {% endblock %}
