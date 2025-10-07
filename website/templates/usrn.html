@@ -23,6 +23,8 @@
 				maxZoom: 19,
 				attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 			}).addTo(map);
-			L.geoJSON({% autoescape false %}{{ geom }}{% endautoescape %}, {style: { "weight": 15 }}).addTo(map).bindPopup('<pre><code>ref:GB:usrn={{ usrn }}{{ name }}</code></pre>').openPopup();
+			var road = L.geoJSON({% autoescape false %}{{ geom }}{% endautoescape %}, {style: { "weight": 15 }});
+			var layerControl = L.control.layers(null, {'USRN': road}, {'collapsed': false}).addTo(map);
+			road.addTo(map).bindPopup('<pre><code>ref:GB:usrn={{ usrn }}{{ name }}</code></pre>').openPopup();
 		</script>
 {% endblock %}
