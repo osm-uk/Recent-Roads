@@ -108,7 +108,7 @@ def authority(authority: str) -> str:
 
     cur = conn.cursor()
     cur.execute(
-        "SELECT street_type, usrn FROM usrn WHERE usrn > %s AND usrn < %s AND street_type != 'Numbered Street' ORDER BY usrn DESC LIMIT 100 OFFSET 0",
+        "SELECT street_type, usrn FROM usrn WHERE usrn > %s AND usrn < %s AND street_type != 'Numbered Street' AND street_type != 'Officially Described Street' ORDER BY usrn DESC LIMIT 500 OFFSET 0",
         (authority_range["USRN Start"], authority_range["USRN End"]),
     )
     records = cur.fetchall()
