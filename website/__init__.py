@@ -1,11 +1,11 @@
 import csv
 import json
-
+import os
 import psycopg2
 from flask import Flask, render_template
 
 app = Flask(__name__, static_url_path="", static_folder="static")
-conn = psycopg2.connect("dbname=rr user=rr")
+conn = psycopg2.connect(os.environ.get("DATABASE_URI"))
 
 authority_map = {}
 with open("USRN Ranges.csv") as file:
