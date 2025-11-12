@@ -2,7 +2,7 @@ import csv
 import json
 import os
 import psycopg2
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__, static_url_path="", static_folder="static")
 conn = psycopg2.connect(os.environ.get("DATABASE_URI"))
@@ -33,7 +33,7 @@ def usrn(usrn: str) -> str:
         return "Bad USRN"
     cur = conn.cursor()
     cur.execute(
-        "SELECT DISTINCT name_1, name_1_lang, name_2, name_2_lang FROM toid2name WHERE road_name_toid IN (SELECT identifier_1 FROM usrn2toid WHERE identifier_2='%s')",
+        "SELECT DISTINCT name_1, name_1_lang, name_2, name_2_lang FROM toid2name WHERE road_name_toid IN (SELECT toid FROM usrn2toid WHERE usrn=%s)",
         (usrn_cleaned,),
     )
     names = {}
@@ -72,19 +72,19 @@ def usrn(usrn: str) -> str:
 				FROM
 					(
 						SELECT
-							uprn as "ref:GB:uprn",
+							uprn.uprn as "ref:GB:uprn",
 							wkb_geometry
 						FROM
 							uprn2usrn
-							JOIN uprn ON uprn.uprn = identifier_1
+							JOIN uprn ON uprn.uprn = uprn2usrn.uprn
 						WHERE
-							identifier_2 = '%s'
+							uprn2usrn.usrn = %s
 					) as t;""",
             (usrn_cleaned,),
         )
         uprns = cur.fetchone()
     else:
-        uprns = ['null']
+        uprns = ["null"]
 
     cur.close()
 

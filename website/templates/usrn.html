@@ -43,8 +43,8 @@
 			var overlays = {'OS Open USRN': usrn, 'HM Land Registry INSPIRE Index Polygons': propertyBoundaries}
 
 			var uprn_geom = {% autoescape false %}{{ uprn_geom }}{% endautoescape %};
-			if (uprn_geom !== null && uprn_geom.features !== undefined && uprn_geom.features.length > 1) {
-				var uprn = L.geoJSON({% autoescape false %}{{ uprn_geom }}{% endautoescape %}, {
+			if (uprn_geom !== null && uprn_geom.features !== undefined && uprn_geom.features.length > 0) {
+				var uprn = L.geoJSON(uprn_geom, {
 					'attribution': 'Contains OS data © Crown copyright and database right 2025'
 				});
 				uprn.bindPopup((layer) => { return '<pre><code>' + (() => {let tags = ''; for (const [k, v] of Object.entries(layer.feature.properties)) {tags += `${k}=${v}\n`;} return tags;})() + '</code></pre>' }).addTo(map);
